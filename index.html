@@ -17,22 +17,55 @@
     <p>Temporal Resource Management and Monitoring Bureau</p>
 
     <nav>
-        <ul>
-            <li><a href="#home">首頁</a></li>
-            <li><a href="#notice">公告</a></li>
-            <li><a href="#department">部門架構</a></li>
-            <li><a href="#recruit">人才招募</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">聯絡我們</a></li>
-        </ul>
-    </nav>
+
+<ul>
+
+<li>
+<button onclick="openPage('home')">
+首頁
+</button>
+</li>
+
+<li>
+<button onclick="openPage('notice')">
+公告
+</button>
+</li>
+
+<li>
+<button onclick="openPage('department')">
+部門架構
+</button>
+</li>
+
+<li>
+<button onclick="openPage('recruit')">
+人才招募
+</button>
+</li>
+
+<li>
+<button onclick="openPage('faq')">
+FAQ
+</button>
+</li>
+
+<li>
+<button onclick="openPage('contact')">
+聯絡我們
+</button>
+</li>
+
+</ul>
+
+</nav>
 </header>
 
 
 <main>
 
 <!-- 首頁 -->
-<section id="home">
+<section id="home" class="page active">
 
     <h2>首頁</h2>
 
@@ -46,7 +79,7 @@
 
 
 <!-- 公告 -->
-<section id="notice">
+<section id="notice" class="page active">
 
     <h2>公告</h2>
 
@@ -59,12 +92,8 @@
 
 </section>
 
-
-
-
 <!-- 部門架構 -->
-<!-- 部門架構 -->
-<section id="department">
+<section id="department" class="page">
 
 <h2>部門架構</h2>
 
@@ -411,7 +440,7 @@
 
 <!-- 人才招募 -->
 
-<section id="recruit">
+<section id="recruit" class="page">
 
 <h2>人才招募</h2>
 
@@ -428,7 +457,7 @@
 
 <!-- FAQ -->
 
-<section id="faq">
+<section id="faq" class="page">
 
 <h2>FAQ</h2>
 
@@ -453,7 +482,7 @@ A：負責處理時空異常、世界線維護以及相關資源管理。
 
 <!-- 聯絡我們 -->
 
-<section id="contact">
+<section id="contact" class="page">
 
 <h2>聯絡我們</h2>
 
