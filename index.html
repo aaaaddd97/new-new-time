@@ -11,7 +11,30 @@
 </head>
 
 <body>
+<script>
 
+function openPage(pageID){
+
+
+    let pages = document.querySelectorAll(".page");
+
+
+    pages.forEach(page=>{
+
+        page.classList.remove("active");
+
+    });
+
+
+
+    document
+    .getElementById(pageID)
+    .classList.add("active");
+
+
+}
+
+</script>
 <header>
     <h1>時空資源管理與監控局</h1>
     <p>Temporal Resource Management and Monitoring Bureau</p>
