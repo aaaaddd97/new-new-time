@@ -57,11 +57,11 @@ body {
     color: var(--text);
 
     font-family:
-        "新細明體",
-        "PMingLiU",
-        "Noto Serif TC",
-        "Times New Roman",
-        serif;
+        "Microsoft JhengHei",
+        "Noto Sans TC",
+        "PingFang TC",
+        Arial,
+        sans-serif;
 
     line-height: 1.8;
 
