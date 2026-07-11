@@ -1,0 +1,616 @@
+/* ===================================================
+   時空資源管理與監控局
+   Temporal Resource Management Bureau
+   Main Style
+=================================================== */
+
+
+/* ---------- 基礎設定 ---------- */
+
+:root {
+
+    --background: #141210;
+    --background-light: #211d18;
+
+    --paper: #d8c7a3;
+
+    --brass: #c8922a;
+    --brass-light: #e8b84b;
+    --brass-dark: #76501c;
+
+    --text: #eee3c8;
+
+    --border: #80602b;
+
+    --shadow:
+        0 0 15px rgba(200,146,42,0.15);
+
+}
+
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+body {
+
+    margin: 0;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #30271b,
+            var(--background) 55%
+        );
+
+    color: var(--text);
+
+    font-family:
+        "Noto Serif TC",
+        "Times New Roman",
+        serif;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* ---------- Header ---------- */
+
+
+header {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    border-bottom:
+        2px solid var(--brass-dark);
+
+    background:
+
+        linear-gradient(
+            rgba(20,18,16,.9),
+            rgba(20,18,16,.9)
+        );
+
+}
+
+
+header h1 {
+
+    margin: 0;
+
+    color:
+        var(--brass-light);
+
+    font-size: 42px;
+
+    letter-spacing: 8px;
+
+    text-shadow:
+        0 0 10px rgba(232,184,75,.4);
+
+}
+
+
+
+header p {
+
+    color:
+        #b9a47a;
+
+    letter-spacing: 3px;
+
+}
+
+
+
+
+/* ---------- 導覽列 ---------- */
+
+
+nav {
+
+    margin-top: 25px;
+
+}
+
+
+
+nav ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    display:
+
+    flex;
+
+    justify-content:
+
+    center;
+
+    gap: 30px;
+
+}
+
+
+
+nav a {
+
+    color:
+
+        var(--paper);
+
+    text-decoration:
+
+        none;
+
+    transition:
+
+        .3s;
+
+}
+
+
+
+nav a:hover {
+
+    color:
+
+        var(--brass-light);
+
+    text-shadow:
+
+        0 0 8px var(--brass);
+
+}
+
+
+
+
+
+/* ---------- 主內容 ---------- */
+
+
+main {
+
+    max-width:
+
+        1200px;
+
+    margin:
+
+        auto;
+
+    padding:
+
+        40px 20px;
+
+}
+
+
+
+section {
+
+    margin-bottom:
+
+        80px;
+
+}
+
+
+
+h2 {
+
+    color:
+
+        var(--brass-light);
+
+    border-left:
+
+        6px solid var(--brass);
+
+    padding-left:
+
+        15px;
+
+    letter-spacing:
+
+        4px;
+
+}
+
+
+
+
+
+/* ---------- 組織架構 ---------- */
+
+
+.organization {
+
+    display:
+
+        flex;
+
+    flex-direction:
+
+        column;
+
+    gap:
+
+        20px;
+
+}
+
+
+
+/* ---------- 部門卡片 ---------- */
+
+
+.org-card {
+
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #26211b,
+            #171512
+        );
+
+
+    border:
+
+        1px solid var(--border);
+
+
+    box-shadow:
+
+        var(--shadow);
+
+
+    overflow:
+
+        hidden;
+
+
+    transition:
+
+        .3s;
+
+
+}
+
+
+
+.org-card:hover {
+
+
+    border-color:
+
+        var(--brass-light);
+
+
+    transform:
+
+        translateY(-3px);
+
+
+}
+
+
+
+
+
+
+
+/* ---------- 點擊標題 ---------- */
+
+
+.org-card summary {
+
+
+    cursor:
+
+        pointer;
+
+
+    padding:
+
+        18px 25px;
+
+
+    color:
+
+        var(--brass-light);
+
+
+    font-size:
+
+        24px;
+
+
+    letter-spacing:
+
+        3px;
+
+
+    list-style:
+
+        none;
+
+
+    position:
+
+        relative;
+
+
+}
+
+
+
+
+
+.org-card summary::-webkit-details-marker {
+
+    display:none;
+
+}
+
+
+
+
+.org-card summary::after {
+
+
+    content:
+
+        "+";
+
+
+    position:
+
+        absolute;
+
+
+    right:
+
+        25px;
+
+
+    font-size:
+
+        28px;
+
+
+    color:
+
+        var(--brass);
+
+
+    transition:
+
+        .3s;
+
+
+}
+
+
+
+
+
+.org-card[open] summary::after {
+
+
+    content:
+
+        "−";
+
+
+}
+
+
+
+
+
+/* ---------- 展開內容 ---------- */
+
+
+.org-content {
+
+
+    padding:
+
+        20px 35px 30px;
+
+
+    background:
+
+        rgba(0,0,0,.2);
+
+
+    border-top:
+
+        1px solid var(--border);
+
+
+    animation:
+
+        open .3s ease;
+
+
+}
+
+
+
+
+@keyframes open {
+
+
+    from {
+
+        opacity:0;
+
+        transform:
+            translateY(-10px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+.org-content ul {
+
+
+    padding-left:
+
+        25px;
+
+
+}
+
+
+
+
+.org-content li {
+
+
+    margin:
+
+        15px 0;
+
+
+}
+
+
+
+.org-content strong {
+
+
+    color:
+
+        var(--brass-light);
+
+
+    font-size:
+
+        18px;
+
+
+}
+
+
+
+
+
+
+/* ---------- Footer ---------- */
+
+
+footer {
+
+
+    text-align:
+
+        center;
+
+
+    padding:
+
+        30px;
+
+
+    border-top:
+
+        1px solid var(--border);
+
+
+    color:
+
+        #927b51;
+
+
+}
+
+
+
+
+
+
+
+/* ---------- 手機版 ---------- */
+
+
+@media(max-width:700px){
+
+
+    header h1 {
+
+        font-size:
+
+            28px;
+
+        letter-spacing:
+
+            3px;
+
+    }
+
+
+    nav ul {
+
+        flex-direction:
+
+            column;
+
+        gap:
+
+            10px;
+
+    }
+
+
+
+    .org-card summary {
+
+        font-size:
+
+            20px;
+
+    }
+
+
+}
