@@ -137,18 +137,13 @@ nav ul {
 
     padding: 0;
 
-    display:
+    display: flex;
 
-    flex;
-
-    justify-content:
-
-    center;
+    justify-content: center;
 
     gap: 30px;
 
 }
-
 
 
 nav button {
