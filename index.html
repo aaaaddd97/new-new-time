@@ -1,568 +1,87 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-
+<!doctype html>
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>時空資源管理與監控局</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111411">
+  <title>時空資源管理與監控局｜Time Management Bureau</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header>
-    <h1>時空資源管理與監控局</h1>
-    <p>Temporal Resource Management and Monitoring Bureau</p>
-
-    <nav>
-
-<ul>
-
-<li>
-<button onclick="openPage('home')">
-首頁
-</button>
-</li>
-
-<li>
-<button onclick="openPage('notice')">
-公告
-</button>
-</li>
-
-<li>
-<button onclick="openPage('department')">
-部門架構
-</button>
-</li>
-
-<li>
-<button onclick="openPage('recruit')">
-人才招募
-</button>
-</li>
-
-<li>
-<button onclick="openPage('faq')">
-FAQ
-</button>
-</li>
-
-<li>
-<button onclick="openPage('contact')">
-聯絡我們
-</button>
-</li>
-
-</ul>
-
-</nav>
-</header>
-
-
-<main>
-
-<!-- 首頁 -->
-<section id="home" class="page active">
-
-<div class="home-layout">
-
-    <!-- 左側 -->
-
-    <aside class="home-menu">
-
-        <button onclick="openPage('notice')">
-            公告
-        </button>
-
-        <button onclick="openPage('department')">
-            部門架構
-        </button>
-
-        <button onclick="openPage('recruit')">
-            人才招募
-        </button>
-
-        <button onclick="openPage('faq')">
-            FAQ
-        </button>
-
-        <button onclick="openPage('contact')">
-            聯絡我們
-        </button>
-
-    </aside>
-
-
-
-    <!-- 中間 -->
-
-    <section class="home-main">
-
-        <div class="window">
-
-            <div class="window-title">
-
-                首頁
-
-            </div>
-
-            <div class="window-body">
-
-                <h2>歡迎登入</h2>
-
-                <p>
-                    歡迎來到時空資源管理與監控局。
-                </p>
-
-                <p>
-                    本局負責監測、管理並維護各時空線之穩定運行。
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="window">
-
-            <div class="window-title">
-
-                系統公告
-
-            </div>
-
-            <div class="window-body">
-
-                Alpha Build 0.0.1
-
-            </div>
-
-        </div>
-
+  <div class="topline"></div>
+  <header>
+    <div class="wrap head">
+      <a class="brand" href="#top" aria-label="時管局首頁">
+        <div class="seal"><span>時管</span></div>
+        <div><div class="brand-name">時空資源管理與監控局</div><div class="brand-en">TIME MANAGEMENT BUREAU</div></div>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">選單　＋</button>
+      <nav id="main-nav" aria-label="主要導覽">
+        <a href="#about">關於本局</a><a href="#organization">組織架構</a><a href="#announcements">公告</a><a href="#worldline">世界線狀態</a><a href="#archive">資料庫</a><a href="#careers">加入本局</a>
+      </nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="eyebrow">時間秩序・持續監測中</div>
+        <h1><span>Witness.</span><span>Decide.</span><span>Continue.</span></h1>
+        <p class="subtitle">By the time you read this, countless new worldlines have already been born.</p>
+        <div class="hero-actions"><a class="button" href="#about">認識時管局 <span>↗</span></a><a class="text-link" href="#worldline">查看世界線狀態　↓</a></div>
+      </div>
+      <div class="hero-stamp">TM BUREAU / PUBLIC PORTAL<br>EST. ——— / REV. 01</div>
     </section>
-
-
-
-    <!-- 右側 -->
-
-    <aside class="home-notice">
-
-        <div class="window">
-
-            <div class="window-title">
-
-                公告
-
-            </div>
-
-            <div class="window-body">
-
-                目前無最新公告。
-
-            </div>
-
-        </div>
-
-    </aside>
-
-</div>
-
-</section>
-
-
-
-<!-- 公告 -->
-<section id="notice" class="page">
-
-    <h2>公告</h2>
-
-    <article>
-        <h3>最新公告</h3>
-        <p>
-            目前尚無公開公告。
-        </p>
-    </article>
-
-</section>
-
-<!-- 部門架構 -->
-<section id="department" class="page">
-
-<h2>部門架構</h2>
-
-
-<div class="organization">
-
-
-<!-- 局長 -->
-<details class="org-card">
-
-<summary>
-    局長
-</summary>
-
-<div class="org-content">
-
-<p>
-    全局最高管理者，負責制定時空管理方針、重大決策以及局內資源調度。
-</p>
-
-</div>
-
-</details>
-
-<!-- 中央時序議會 -->
-<details class="org-card">
-
-<summary>
-    中央時序議會
-</summary>
-
-<div class="org-content">
-
-<p>
-    負責審議重大時序事件，監督各部門運作，並決定涉及多世界線的重大政策。
-</p>
-
-</div>
-
-</details>
-
-<!-- 事務執行部 -->
-
-<details class="org-card">
-
-<summary>
-    事務執行部
-</summary>
-
-
-<div class="org-content">
-
-
-<p>
-    負責執行局內主要任務，包括日常管理與外部時空干涉。
-</p>
-
-
-<ul>
-
-<li>
-    <strong>內務運務科</strong>
-    <p>
-        負責局內行政、人員調度、任務安排以及日常運作。
-    </p>
-</li>
-
-
-<li>
-    <strong>時序干涉科</strong>
-    <p>
-        負責處理時間線異常、世界線修正以及外勤干涉任務。
-    </p>
-</li>
-
-
-</ul>
-
-
-</div>
-
-</details>
-
-<!-- 人員異常處理部 -->
-
-<details class="org-card">
-
-<summary>
-    人員異常處理部
-</summary>
-
-
-<div class="org-content">
-
-
-<p>
-    負責處理因時空異常影響而產生的人員問題。
-</p>
-
-
-<ul>
-
-<li>
-<strong>人員治療科</strong>
-
-<p>
-負責人員身體修復、異常影響治療與後勤醫療支援。
-</p>
-
-</li>
-
-
-<li>
-<strong>認知修復科</strong>
-
-<p>
-負責處理記憶異常、認知污染以及心理狀態修復。
-</p>
-
-</li>
-
-
-</ul>
-
-
-</div>
-
-</details>
-
-<!-- 資訊統整部 -->
-
-<details class="org-card">
-
-<summary>
-    資訊統整部
-</summary>
-
-
-<div class="org-content">
-
-
-<p>
-    負責收集、分析並管理各世界線資訊。
-</p>
-
-
-<ul>
-
-<li>
-<strong>資料統計科</strong>
-<p>
-負責異常資料整理、事件紀錄與數據分析。
-</p>
-</li>
-
-
-<li>
-<strong>技術研發科</strong>
-<p>
-負責開發時空相關技術與特殊設備。
-</p>
-</li>
-
-
-<li>
-<strong>時空觀測科</strong>
-<p>
-負責監控世界線變化與預測異常發生。
-</p>
-</li>
-
-
-</ul>
-
-
-</div>
-
-</details>
-
-<!-- 資源保障部 -->
-
-<details class="org-card">
-
-<summary>
-    資源保障部
-</summary>
-
-
-<div class="org-content">
-
-
-<p>
-    負責管理局內資源、契約以及設施維護。
-</p>
-
-
-<ul>
-
-<li>
-<strong>物資管理科</strong>
-<p>
-負責設備、材料以及特殊資源管理。
-</p>
-</li>
-
-
-<li>
-<strong>契約評量科</strong>
-<p>
-負責評估時空契約、異常交易與相關風險。
-</p>
-</li>
-
-
-<li>
-<strong>設施維護科</strong>
-<p>
-負責基地、設備與時空裝置維護。
-</p>
-</li>
-
-
-</ul>
-
-
-</div>
-
-</details>
-    
-<!-- 全局督察部 -->
-<details class="org-card">
-
-<summary>
-    全局督察部
-</summary>
-
-
-<div class="org-content">
-
-
-<p>
-    負責監督全局紀律，處理違規事件與重大事故。
-</p>
-
-
-<ul>
-
-
-<li>
-<strong>人員懲戒科</strong>
-
-<p>
-負責調查人員違規行為與執行相關處分。
-</p>
-
-</li>
-
-
-<li>
-<strong>案件糾正科</strong>
-
-<p>
-負責修正錯誤處理造成的時空影響。
-</p>
-
-</li>
-
-
-<li>
-<strong>物件處置科</strong>
-
-<p>
-負責管理危險異常物件與特殊資產。
-</p>
-
-</li>
-
-
-<li>
-<strong>緊急應變科</strong>
-
-<p>
-負責處理重大時空事故與危機事件。
-</p>
-
-</li>
-
-
-</ul>
-
-
-</div>
-
-</details>
-
-
-
-</div>
-
-</section>
-
-
-
-<!-- 人才招募 -->
-
-<section id="recruit" class="page">
-
-<h2>人才招募</h2>
-
-<p>
-    時空資源管理與監控局正在尋找願意維護世界秩序的人員。
-</p>
-
-</section>
-
-
-
-
-
-
-<!-- FAQ -->
-
-<section id="faq" class="page">
-
-<h2>FAQ</h2>
-
-
-<article>
-
-<h3>Q：時管局負責什麼？</h3>
-
-<p>
-A：負責處理時空異常、世界線維護以及相關資源管理。
-</p>
-
-</article>
-
-
-</section>
-
-
-
-
-
-
-<!-- 聯絡我們 -->
-
-<section id="contact" class="page">
-
-<h2>聯絡我們</h2>
-
-<p>
-    時空資源管理與監控局對外聯絡窗口。
-</p>
-
-</section>
-
-
-
-</main>
-
-
-
-<footer>
-
-<p>
-© 時空資源管理與監控局
-</p>
-
-</footer>
-
-<script src="script.js"></script>
+    <div class="status-strip" aria-label="局務概況">
+      <div class="wrap status-grid">
+        <div class="status-item"><div class="status-label">監測網絡</div><div class="status-value"><i class="dot"></i>運作中</div></div>
+        <div class="status-item"><div class="status-label">時間秩序</div><div class="status-value">例行監控</div></div>
+        <div class="status-item"><div class="status-label">資料更新</div><div class="status-value">等待同步</div></div>
+      </div>
+    </div>
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">01 / About</div><h2>關於本局</h2></div><p class="section-note">在時間的變化之中，辨識值得守護的秩序。</p></div>
+        <div class="about-grid"><p class="lead">時空資源管理與監控局，負責觀測時間流動、記錄世界線變化，並妥善管理跨時空資源。</p><div><p class="body-copy">本局依據尚待公開的設立章程執行任務。透過監測、研判與紀錄，各部門共同維持時間秩序的穩定。此處為機構簡介佔位文案，將依世界觀設定調整。</p></div></div>
+        <div class="principles"><div class="principle"><b>WITNESS</b><span>觀測變化，忠實留存紀錄。</span></div><div class="principle"><b>DECIDE</b><span>依據證據，審慎評估行動。</span></div><div class="principle"><b>CONTINUE</b><span>承擔選擇，持續執行任務。</span></div></div>
+      </div>
+    </section>
+    <section class="section" id="organization">
+      <div class="wrap"><div class="section-head"><div><div class="kicker">02 / Organization</div><h2>組織架構</h2></div><p class="section-note">部門名稱與職掌為初版佔位，後續可依設定重新命名或排序。</p></div>
+        <div class="org-grid"><article class="card"><div class="card-id">DIVISION 01</div><h3>監測處</h3><p>追蹤時間流變與世界線狀態，整理異常訊號。</p></article><article class="card"><div class="card-id">DIVISION 02</div><h3>研判處</h3><p>彙整觀測資料，評估事件影響與應對方案。</p></article><article class="card"><div class="card-id">DIVISION 03</div><h3>檔案處</h3><p>保存任務紀錄、研究資料與待解封存檔。</p></article></div>
+      </div>
+    </section>
+    <section class="section" id="announcements">
+      <div class="wrap"><div class="section-head"><div><div class="kicker">03 / Announcements</div><h2>公告與通報</h2></div><p class="section-note">近期局務資訊。以下為示意項目，日期與內容尚待設定。</p></div>
+        <div class="news-list"><a class="news-row" href="#announcements"><time>— — — —</time><span class="tag">局務公告</span><span class="news-title">例行監測作業說明（佔位）</span><span class="arrow">↗</span></a><a class="news-row" href="#announcements"><time>— — — —</time><span class="tag">資料更新</span><span class="news-title">世界線資料庫更新紀錄（佔位）</span><span class="arrow">↗</span></a><a class="news-row" href="#announcements"><time>— — — —</time><span class="tag">招募資訊</span><span class="news-title">新進人員招募公告（佔位）</span><span class="arrow">↗</span></a></div>
+      </div>
+    </section>
+    <section class="section" id="worldline">
+      <div class="wrap"><div class="section-head"><div><div class="kicker">04 / Worldline Status</div><h2>世界線狀態</h2></div><p class="section-note">公開摘要介面草案；實際資訊範圍可再依劇情調整。</p></div>
+        <div class="worldline"><div class="worldline-copy"><div class="kicker">PUBLIC SUMMARY / 000</div><h3>觀測網絡正常運作</h3><p>目前未發布需要公眾採取行動的通知。局內監測資料仍在同步中，摘要狀態僅供展示。</p><a class="text-link" href="#archive">前往公開資料庫　↗</a></div><div class="readout"><div class="readout-row"><span>網絡狀態</span><span>STANDBY</span></div><div class="readout-row"><span>異常通報</span><span>— —</span></div><div class="readout-row"><span>同步時間</span><span>AWAITING</span></div></div></div>
+      </div>
+    </section>
+    <section class="section" id="archive">
+      <div class="wrap"><div class="section-head"><div><div class="kicker">05 / Archive</div><h2>公開資料庫</h2></div><p class="section-note">已核准公開的文件與紀錄。分類可依後續謎題設計延伸。</p></div>
+        <div class="archive-grid"><a class="archive-card" href="#archive"><div class="card-id">ARCHIVE / A-001</div><h3>局史與沿革</h3><p>本局成立背景、重要節點與版本紀錄。</p></a><a class="archive-card" href="#archive"><div class="card-id">ARCHIVE / B-014</div><h3>世界線觀測簡報</h3><p>公開摘要與基礎名詞說明。</p></a><a class="archive-card" href="#archive"><div class="card-id">ARCHIVE / C-032</div><h3>任務紀錄索引</h3><p>已完成任務的可閱覽索引。</p></a><a class="archive-card" href="#archive"><div class="card-id">ARCHIVE / CLASSIFIED</div><h3>限制閱覽資料</h3><p>部分欄位需具備相應權限。</p></a></div>
+      </div>
+    </section>
+    <section class="section" id="careers">
+      <div class="wrap"><div class="section-head"><div><div class="kicker">06 / Careers</div><h2>加入本局</h2></div><p class="section-note">職務介紹與招募流程暫以佔位內容呈現。</p></div>
+        <div class="about-grid"><p class="lead">每一次觀測，都需要有人願意留下紀錄。</p><p class="body-copy">本局持續尋找具備耐心、判斷力與責任感的候選人。職缺、資格條件與申請方式將於此處公告。</p></div>
+      </div>
+    </section>
+    <section class="section" id="faq">
+      <div class="wrap"><div class="section-head"><div><div class="kicker">07 / FAQ</div><h2>常見問題</h2></div><p class="section-note">可折疊問答區塊，問題與回答皆為初稿佔位。</p></div>
+        <div class="faq"><details><summary>時空資源管理與監控局是什麼機構？</summary><p>本局為負責觀測與管理時間秩序的虛構機構。此回答將依正式世界觀設定修訂。</p></details><details><summary>什麼是世界線？</summary><p>世界線為描述不同時間發展路徑的工作用語。詳細定義與分類尚待補充。</p></details><details><summary>如何查閱公開檔案？</summary><p>請由公開資料庫的分類索引開始；部分檔案可能受到閱覽權限限制。</p></details></div>
+      </div>
+    </section>
+    <section class="section" id="contact">
+      <div class="wrap"><div class="section-head"><div><div class="kicker">08 / Contact</div><h2>聯絡本局</h2></div><p class="section-note">本區保留聯絡方式的版位，不預填真實地址或聯絡資訊。</p></div>
+        <div class="contact-box"><div><h3>公眾諮詢窗口</h3><p>聯絡表單或安全通報方式將於正式版本提供。</p></div><a class="button" href="#contact">聯絡方式待公布 <span>↗</span></a></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap foot"><div>© 時空資源管理與監控局　｜　公開資訊入口</div><div class="foot-meta">PUBLIC PORTAL / PROTOTYPE<br>內容與資料均為初版佔位</div></div></footer>
+  <script src="script.js"></script>
 </body>
-
 </html>

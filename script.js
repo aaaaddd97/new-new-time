@@ -1,26 +1,14 @@
-function openPage(pageID){
-
-
-    let pages = document.querySelectorAll(".page");
-
-
-    pages.forEach(page=>{
-
-        page.classList.remove("active");
-
+const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('#main-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.textContent = open ? '選單　−' : '選單　＋';
     });
-
-
-
-    let target =
-    document.getElementById(pageID);
-
-
-    if(target){
-
-        target.classList.add("active");
-
-    }
-
-
-}
+    nav.addEventListener('click', event => {
+      if (event.target.closest('a')) {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.textContent = '選單　＋';
+      }
+    });
